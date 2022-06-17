@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.pageContent {
+  display: flex;
+  height: 97%;
+}
+
+.left {
+  background-color: lightblue;
+  display: flex;
+  flex: 1.5;
+  overflow: hidden;
+}
+
+.sidebarImage {
+  height: 100%;
+  margin-left: -40%;
+}
+
+.overwatchLogo {
+  position: absolute;
+}
+
+.right {
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.rightTop {
+  background-color: lightyellow;
+  display: flex;
+  flex: 1;
+}
+
+.rightMiddle {
+  display: flex;
+  flex: 1.5;
+}
+
+.rightBottom {
+  background-color: lightcoral;
+  display: flex;
+  flex: 1;
+}
+
+footer {
+  background-color: lightpink;
+  height: 3%;
+}
