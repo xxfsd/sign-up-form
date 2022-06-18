@@ -1,59 +1,71 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html, body {
-  height: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
-.pageContent {
+.wrapper {
   display: flex;
-  height: 97%;
+  height: 97vh;
 }
 
-.left {
+.left-column {
   background-color: lightblue;
   display: flex;
-  flex: 1.5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1.3;
   overflow: hidden;
 }
 
-.sidebarImage {
+.sidebar-image {
   height: 100%;
-  margin-left: -40%;
+  margin-left: 50px;
 }
 
-.overwatchLogo {
+.logo-container {
+  background-color: rgba(211, 211, 211, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  margin-bottom: 45px;
 }
 
-.right {
-  background-color: lightgreen;
+.sidebar-logo {
+  width: 85%;
+}
+
+.right-column {
+  background-color: lightcoral;
   display: flex;
   flex-direction: column;
   flex: 2;
 }
 
-.rightTop {
-  background-color: lightyellow;
-  display: flex;
-  flex: 1;
+.row-one {
+  background-color: whitesmoke;
+  flex: 1.5;
+  font-size: 25px;
 }
 
-.rightMiddle {
-  display: flex;
+.row-two {
+  background-color: #fafafa;
   flex: 1.5;
 }
 
-.rightBottom {
-  background-color: lightcoral;
-  display: flex;
+.row-three {
+  background-color: whitesmoke;
   flex: 1;
 }
 
 footer {
-  background-color: lightpink;
-  height: 3%;
+  height: 3vh;
 }
