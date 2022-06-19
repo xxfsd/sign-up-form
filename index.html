@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Overwatch</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
   <main>
@@ -16,32 +19,62 @@
         <div class="logo-container">
           <img class="sidebar-logo" src="images/overwatchLogo.png" alt="overwatchLogo">
         </div>
-          <img class="sidebar-image" src="images/mercy.jpg" alt="sidebarImage">
       </div>
 
       <!-- Right column -->
       <div class="right-column">
         <!-- Right rows-->
         <div class="row-one">
-          <h1>THE WORLD NEEDS HEROES</h1>
-          <p>Thirty years ago, the Omnics declared war. The nations of the world had no answer, Overwatch was created to rescue humanity from the Omnic Crisis. You can make a difference. The world needs you now, more than ever!</p>
+          <h2 class="row-one-header">THE WORLD NEEDS HEROES</h2>
+          
+          <p class="row-one-text">Thirty years ago, the Omnics declared war. The nations of the world had no answer, Overwatch was created to rescue humanity from the Omnic Crisis. You can make a difference. The world needs you now, more than ever!</p>
         </div>
 
         <div class="row-two">
-          <input type="text" placeholder="Write something">
+          <h2 class="form-header">Are you with us?</h2>
+          
+          <form class="signup-form">
+            <div class="left-text-column">
+           
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="first-name">
+            
+              <label for="email">EMAIL</label>
+              <input type="text" id="email" name="email">
+            
+              <label for="password">PASSWORD</label>
+              <input type="text" id="password" name="password">
+
+            </div>
+
+            <div class="right-text-column">
+            
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="last-name">
+            
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="text" id="phone-number" name="phone-number">
+            
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input type="text" id="confirm-password" name="confirm-password">
+          
+            </div>
+          </form>
+       
         </div>
         
         <div class="row-three">
-          <button>Click me</button>
+          
+          <button>Sign me up!</button>
+          
+          <p class="row-three-text">Already a member? Log in</p>
+        
         </div>
 
       </div>  
 
     </div>
 </main>
-<footer>
-    <p class="socials">Created by Joshua Hughes</p>
-</footer>
   <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

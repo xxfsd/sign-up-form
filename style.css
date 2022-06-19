@@ -9,42 +9,42 @@ html, body {
   min-width: 100vw;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
 .wrapper {
   display: flex;
-  height: 97vh;
+  height: 100vh;
+  width: 90vw;
 }
 
 .left-column {
-  background-color: lightblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 1.3;
-  overflow: hidden;
-}
-
-.sidebar-image {
-  height: 100%;
-  margin-left: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex: 1;
+background-image: url("images/mercy.jpg");
+background-repeat: no-repeat;
+background-position: 45%;
+background-size: auto 100%;
+overflow: hidden;
 }
 
 .logo-container {
   background-color: rgba(211, 211, 211, 0.5);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  margin-bottom: 45px;
+  margin-bottom: 3rem;
 }
 
 .sidebar-logo {
-  width: 85%;
+  width: 90%;
 }
 
 .right-column {
-  background-color: lightcoral;
   display: flex;
   flex-direction: column;
   flex: 2;
@@ -52,13 +52,44 @@ html, body {
 
 .row-one {
   background-color: whitesmoke;
-  flex: 1.5;
+  flex: 1.2;
   font-size: 25px;
+}
+
+.row-one-text {
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.row-one-header {
+  color: #4b535d;
+  margin: 0.5rem 0 1rem 2.2rem;
 }
 
 .row-two {
   background-color: #fafafa;
-  flex: 1.5;
+  flex: 1.3;
+}
+
+.form-header {
+  margin: 1rem 0 0.5rem 2.2rem;
+}
+
+.signup-form {
+  display: flex;
+}
+
+.left-text-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.2rem;
+}
+
+.right-text-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.2rem;
 }
 
 .row-three {
@@ -66,6 +97,19 @@ html, body {
   flex: 1;
 }
 
-footer {
-  height: 3vh;
+button {
+  background-color: #f99b1e;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  height: 40px;
+  width: 200px;
+  margin: 2rem 0 1rem 2.2rem;
+  font-size: 1.2rem;
+}
+
+.row-three-text {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 2.2rem;
 }
