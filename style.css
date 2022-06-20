@@ -59,22 +59,22 @@ overflow: hidden;
 
 .row-one {
   background-color: whitesmoke;
-  flex: 1;
+  flex: 0.9;
   font-weight: bold;
   padding-right: 10.2rem;
 }
 
 .row-one-header {
   color: #007dd1;
-  margin: 1rem 0 0.8rem 2.2rem;
+  margin: 2rem 0 1rem 2.2rem;
   font-family: 'Big-Noodle_Titling', impact,sans-serif;
-  font-size: 3rem;
+  font-size: 3vw;
   letter-spacing: 0.1rem;
 }
 
 .row-one-text {
-  padding-bottom: 1.7rem;
-  font-size: 1.4rem;
+  padding-bottom: 2.5rem;
+  font-size: 1.4vw;
 }
 
 .row-one-text, .row-one-text-lower {
@@ -82,7 +82,7 @@ overflow: hidden;
 }
 
 .row-one-text-lower {
-  font-size: 1.7rem;
+  font-size: 1.7vw;
 }
 
 .row-two {
@@ -95,9 +95,9 @@ overflow: hidden;
 
 .form-header {
   color: #4b535d;
-  margin: 1.5rem 0 0.6rem 2.2rem;
+  margin: 2.5rem 0 3.5rem 2.2rem;
   font-family: 'Big-Noodle_Titling', impact,sans-serif;
-  font-size: 2rem;
+  font-size: 2vw;
   letter-spacing: 0.1rem;
 }
 
@@ -106,13 +106,13 @@ form {
 }
 
 label {
-  font-size: 0.7rem;
+  font-size: 0.7vw;
 }
 
 input {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   padding: 5px;
-  width: 10rem;
+  width: 10vw;
 }
 
 .left-text-column {
@@ -138,10 +138,10 @@ button {
   color: white;
   border: none;
   border-radius: 6px;
-  height: 2.4rem;
-  width: 11.5rem;
+  height: 2.4vw;
+  width: 11.5vw;
   margin: 1.8rem 0 1rem 2.2rem;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
 }
 
 button:hover {
@@ -157,12 +157,13 @@ button:active {
 
 .row-three-text {
   margin-left: 2.2rem;
-  font-weight: 500;
+  font-size: 0.8vw;
+  font-weight: 600;
+
 }
 
 .log-in {
   color: #4b535d;
-  font-weight: 500;
   margin-left: 0.5rem;
 }
 
@@ -172,5 +173,5 @@ button:active {
 
 .log-in:active {
   color: #007dd1;
-  font-weight: 600;
+  font-weight: 700;
 }
