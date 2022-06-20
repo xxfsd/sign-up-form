@@ -1,7 +1,13 @@
+@font-face {
+  font-family: 'Big-Noodle_titling';
+  src: url(fonts/big_noodle_titling.ttf);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 html, body {
@@ -17,7 +23,8 @@ main {
 .wrapper {
   display: flex;
   height: 100vh;
-  width: 90vw;
+  width: 85vw;
+  box-shadow: 0 0 15px 2px #ddd;
 }
 
 .left-column {
@@ -52,37 +59,60 @@ overflow: hidden;
 
 .row-one {
   background-color: whitesmoke;
-  flex: 1.2;
-  font-size: 25px;
-}
-
-.row-one-text {
-  margin-left: 2.2rem;
-  margin-right: 2.2rem;
-  font-family: 'Roboto', sans-serif;
+  flex: 1.6;
+  font-weight: bold;
+  padding-right: 10.2rem;
 }
 
 .row-one-header {
-  color: #4b535d;
-  margin: 0.5rem 0 1rem 2.2rem;
+  color: #007dd1;
+  margin: 0.8rem 0 0.5rem 2.2rem;
+  font-family: 'Big-Noodle_Titling', impact,sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+.row-one-text {
+  padding-bottom: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.row-one-text, .row-one-text-lower {
+  margin-left: 2.2rem;
+}
+
+.row-one-text-lower {
+  font-size: 1.5rem;
 }
 
 .row-two {
   background-color: #fafafa;
-  flex: 1.3;
+  flex: 1.6;
+  padding-top: 0.7rem;
+  box-shadow: 0px 3px 5px -2px rgb(0 0 0 / 50%);
+  z-index: 1;
 }
 
 .form-header {
+  color: #4b535d;
   margin: 1rem 0 0.5rem 2.2rem;
+  font-family: 'Big-Noodle_Titling', impact,sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
 }
 
-.signup-form {
+form {
   display: flex;
+}
+
+label {
+  font-size: 0.7rem;
 }
 
 input {
   margin-bottom: 1rem;
   padding: 5px;
+  width: 10rem;
 }
 
 .left-text-column {
@@ -99,30 +129,48 @@ input {
 
 .row-three {
   background-color: whitesmoke;
-  flex: 1;
+  flex: 0.9;
 }
 
 button {
   background-color: #f99b1e;
-  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   color: white;
   border: none;
   border-radius: 6px;
-  height: 40px;
-  width: 200px;
-  margin: 2rem 0 1rem 2.2rem;
+  height: 2.4rem;
+  width: 11.5rem;
+  margin: 1.8rem 0 1rem 2.2rem;
   font-size: 1.2rem;
 }
 
 button:hover {
   background-color: #f88d00;
-  transform: scale(1.01,1.01);
-  -webkit-transform:scale(1.01,1.01);
-  -moz-transform:scale(1.01,1.01);
   cursor: pointer;
 }
 
+button:active {
+  transform:scale(1.01,1.01);
+    -webkit-transform:scale(1.01,1.01);
+    -moz-transform:scale(1.01,1.01);
+}
+
 .row-three-text {
-  font-family: 'Roboto', sans-serif;
   margin-left: 2.2rem;
+  font-weight: 500;
+}
+
+.log-in {
+  color: #4b535d;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.log-in:hover {
+  color: #007dd1;
+}
+
+.log-in:active {
+  color: #007dd1;
+  font-weight: 600;
 }

@@ -27,36 +27,38 @@
         <div class="row-one">
           <h2 class="row-one-header">THE WORLD NEEDS HEROES</h2>
           
-          <p class="row-one-text">Thirty years ago, the Omnics declared war. The nations of the world had no answer, Overwatch was created to rescue humanity from the Omnic Crisis. You can make a difference. The world needs you now, more than ever!</p>
+          <p class="row-one-text">Thirty years ago, the Omnics declared war. The nations of the world had no answer, Overwatch was created to rescue humanity from the Omnic Crisis. You can make a difference.</p>
+          <p class="row-one-text-lower">The world needs you now, more than ever!</p>
         </div>
 
         <div class="row-two">
           <h2 class="form-header">Are you with us?</h2>
           
-          <form class="signup-form">
+          <form id="signup-form" action="#">
             <div class="left-text-column">
            
-              <label for="first-name">FIRST NAME</label>
-              <input type="text" id="first-name" name="first-name">
+              <label for="first-name">* FIRST NAME</label>
+              <input type="text" id="first-name" name="first-name" required>
             
-              <label for="email">EMAIL</label>
-              <input type="text" id="email" name="email">
+              <label for="email">* EMAIL</label>
+              <input type="email" id="email" name="email" required>
             
-              <label for="password">PASSWORD</label>
-              <input type="text" id="password" name="password">
+              <label for="password">* PASSWORD</label>
+              <input type="text" id="password" name="password" required>
 
             </div>
 
             <div class="right-text-column">
             
-              <label for="last-name">LAST NAME</label>
-              <input type="text" id="last-name" name="last-name">
+              <label for="last-name">* LAST NAME</label>
+              <input type="text" id="last-name" name="last-name" required>
             
-              <label for="phone-number">PHONE NUMBER</label>
-              <input type="text" id="phone-number" name="phone-number">
+              <label for="phone-number">* PHONE NUMBER</label>
+              <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="123-456-7890"
+              required>
             
-              <label for="confirm-password">CONFIRM PASSWORD</label>
-              <input type="text" id="confirm-password" name="confirm-password">
+              <label for="confirm-password">* CONFIRM PASSWORD</label>
+              <input type="password" id="confirm-password" name="confirm-password" required>
           
             </div>
           </form>
@@ -65,9 +67,9 @@
         
         <div class="row-three">
           
-          <button>Sign me up!</button>
+          <button type="submit" form="signup-form">Sign me up!</button>
           
-          <p class="row-three-text">Already a member? Log in</p>
+          <p class="row-three-text">Already have an account?<a class="log-in" href="#">Log in</a></p>
         
         </div>
 
