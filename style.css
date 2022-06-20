@@ -24,7 +24,7 @@ main {
 display: flex;
 justify-content: center;
 align-items: center;
-flex: 1;
+flex: 1.1;
 background-image: url("images/mercy.jpg");
 background-repeat: no-repeat;
 background-position: 45%;
@@ -33,7 +33,7 @@ overflow: hidden;
 }
 
 .logo-container {
-  background-color: rgba(211, 211, 211, 0.5);
+  background-color: rgba(211, 211, 211, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,6 +80,11 @@ overflow: hidden;
   display: flex;
 }
 
+input {
+  margin-bottom: 1rem;
+  padding: 5px;
+}
+
 .left-text-column {
   display: flex;
   flex-direction: column;
@@ -107,6 +112,14 @@ button {
   width: 200px;
   margin: 2rem 0 1rem 2.2rem;
   font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: #f88d00;
+  transform: scale(1.01,1.01);
+  -webkit-transform:scale(1.01,1.01);
+  -moz-transform:scale(1.01,1.01);
+  cursor: pointer;
 }
 
 .row-three-text {
